@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайнер и визуализатор</title>
+    <link rel="stylesheet" href="lab_4.css">
+    <style>
+        ul {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ялпута Семён</h1>
+        <p>Дизайнер и визуализатор</p>
+        <img src="photos/photo_web.jpg" alt="Портрет дизайнера" width="200" height="200">
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#styles">Стили</a></li>
+            <li><a href="#palettes">Палитры</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+
+            <section id="styles" class="styles-section">
+                <h2>Стили в дизайне</h2>
+                <div class="styles-flex">
+
+                    <article class="style-card">
+                        <div class="style-preview" style="background: linear-gradient(135deg, #2c2c2c, #f5f5f5);"></div>
+                        <h3>Минимализм</h3>
+                        <p>Чистые линии, много воздуха, ничего лишнего. Акцент на функциональность и простоту форм.</p>
+                    </article>
+
+                    <article class="style-card">
+                        <div class="style-preview" style="background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb);"></div>
+                        <h3>Поп-арт</h3>
+                        <p>Яркие кислотные цвета, контрастные сочетания, отсылки к массовой культуре и комиксам.</p>
+                    </article>
+
+                    <article class="style-card">
+                        <div class="style-preview" style="background: linear-gradient(135deg, #8b7355, #d4a574, #3e2723);"></div>
+                        <h3>Ретро</h3>
+                        <p>Тёплые приглушённые тона, винтажная типографика, ностальгия по эстетике прошлых десятилетий.</p>
+                    </article>
+
+                    <article class="style-card">
+                        <div class="style-preview" style="background: linear-gradient(135deg, #1a1a1a, #ff0000, #ffffff);"></div>
+                        <h3>Брутализм</h3>
+                        <p>Грубые формы, резкие контрасты, намеренная «неаккуратность» и вызов традиционным нормам.</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="palettes" class="palettes-section">
+                <h2>Палитры недели</h2>
+                <div class="palettes-grid">
+
+                    <article class="palette-card">
+                        <h3>Закат</h3>
+                        <div class="palette-colors">
+                            <div class="color-block" style="background-color: var(--sunset-1);">#FF6B6B</div>
+                            <div class="color-block" style="background-color: var(--sunset-2);">#FFA07A</div>
+                            <div class="color-block" style="background-color: var(--sunset-3);">#FFD700</div>
+                            <div class="color-block" style="background-color: var(--sunset-4);">#FF4500</div>
+                        </div>
+                    </article>
+
+                    <article class="palette-card">
+                        <h3>Океан</h3>
+                        <div class="palette-colors">
+                            <div class="color-block" style="background-color: var(--ocean-1);">#006994</div>
+                            <div class="color-block" style="background-color: var(--ocean-2);">#48D1CC</div>
+                            <div class="color-block" style="background-color: var(--ocean-3);">#87CEEB</div>
+                            <div class="color-block" style="background-color: var(--ocean-4);">#1E90FF</div>
+                        </div>
+                    </article>
+
+                    <article class="palette-card">
+                        <h3>Лес</h3>
+                        <div class="palette-colors">
+                            <div class="color-block" style="background-color: var(--forest-1);">#228B22</div>
+                            <div class="color-block" style="background-color: var(--forest-2);">#8FBC8F</div>
+                            <div class="color-block" style="background-color: var(--forest-3);">#556B2F</div>
+                            <div class="color-block" style="background-color: var(--forest-4);">#90EE90</div>
+                        </div>
+                    </article>
+
+                    <article class="palette-card">
+                        <h3>Пастель</h3>
+                        <div class="palette-colors">
+                            <div class="color-block" style="background-color: var(--pastel-1);">#FFB6C1</div>
+                            <div class="color-block" style="background-color: var(--pastel-2);">#DDA0DD</div>
+                            <div class="color-block" style="background-color: var(--pastel-3);">#B0E0E6</div>
+                            <div class="color-block" style="background-color: var(--pastel-4);">#FFFACD</div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="about" style="min-height: 300px;">
+                <h2>Обо мне</h2>
+                <p>Я дизайнер и визуализатор с опытом работы в графическом и веб-дизайне. Люблю экспериментировать с цветовыми палитрами и изучать разные стили — от минимализма до брутализма. Верю, что хороший дизайн решает задачи бизнеса и делает жизнь пользователей проще.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Связаться со мной</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш Email</label>
+                        <input type="email" id="email" name="email" placeholder="Введите Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside>
+            <h2>Любимый стиль дизайна</h2>
+            <p>Минимализм, ретро, брутализм.</p>
+            <a href="https://example.com">Моё портфолио</a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ялпута Семён</p>
+    </footer>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
